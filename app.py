@@ -24,7 +24,7 @@ download_model()
 # Direct Google Drive download URL
 
 new_model = tf.keras.models.load_model('best_model_accuracy.keras')
-st.title('Image Classification')
+st.title('Plant Disease Detection Model')
 st.write("Upload an image to predict its class")
 uploaded_image = st.file_uploader("Choose an image...",type=["jpg", "jpeg", "png"])
 class_names = ["Apple healthy",
